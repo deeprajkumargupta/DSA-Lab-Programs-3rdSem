@@ -20,8 +20,8 @@ void main()
     int choice;
     while (1)
     {
-        printf("\n\n1.Insert in begining\n2.Delete from Beginning");
-        printf("\n3Search for an element\n4.Show\n5.Total nodes\n6.Exit ");
+        printf("\n\n1.Insert in begining\n2.Delete from beginning");
+        printf("\n3.Search for an element\n4.Show\n5.Total nodes\n6.Exit ");
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
         switch (choice)
@@ -82,7 +82,7 @@ void begin_delete()
         temp = head->next;
         head->next = temp->next;
         free(temp);
-        printf("\nNode deleted from the begining ...\n");
+        printf("\nNode deleted from the beginning ...\n");
         head->data--;
     }
 }
@@ -95,7 +95,7 @@ void search()
         printf("\nEmpty List\n");
         return;
     }
-    printf("\nEnter item which you want to search?: ");
+    printf("\nEnter item which you want to search: ");
     scanf("%d", &key);
     if (head->next->data == key)
     {
@@ -126,11 +126,10 @@ void display()
     }
     else
     {
-        printf("\nprinting values . . . . .");
-        temp = head->next;
+        printf("\nprinting values . . . . .\n");
         while (temp != NULL)
         {
-            printf("\n%d", temp->data);
+            printf("%d\t", temp->data);
             temp = temp->next;
         }
     }
