@@ -42,5 +42,3 @@ root = build_merkle_tree(leaf_nodes)
 # Print the Merkle Root
 print("Merkle Root Hash:")
 print(root.data)
-print("Merkle Root Hash:")
-print(root.data)
